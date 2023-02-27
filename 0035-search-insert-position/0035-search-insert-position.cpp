@@ -9,7 +9,8 @@ public:
         while(low <= high){
             int mid = low+(high-low)/2;
             if(nums[mid] == target){
-                return mid;
+                ans = mid;
+                break;
             }
             else if(nums[mid] < target){
                 ans = mid+1;
